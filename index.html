@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Avneet ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.6em;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    padding: 0 25px;
+    line-height: 1.6;
+}
+
+button {
+    background: #ff1e56;
+    color: white;
+    border: none;
+    padding: 15px 28px;
+    font-size: 1.1em;
+    border-radius: 35px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+button:hover {
+    background: #ff003c;
+}
+
+.section {
+    margin: 45px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.photo {
+    width: 85%;
+    max-width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    margin: 25px auto;
+}
+
+.heart {
+    position: fixed;
+    font-size: 22px;
+    animation: float 6s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-120vh); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎂 Happy Birthday Avneet Kaur ❤️</h1>
+
+<h2>My Forever Person 🌸</h2>
+
+<img src="IMG_1241.JPG" alt="Us Together" class="photo">
+
+<p>
+This picture means everything to me 💕  
+Because it reminds me how lucky I am to have you in my life.
+</p>
+
+<button onclick="openSurprise()">🎁 Open Your Surprise</button>
+
+<div id="surprise" class="hidden section">
+    <h2>💌 From My Heart</h2>
+    <p>
+    Avneet, you are my smile, my peace, my comfort, and my happiness.  
+    Every moment with you feels special and every memory with you is precious ❤️
+    </p>
+
+    <p>
+    <strong>I am always with you.</strong><br>
+    Thank you always for giving me this chance.
+    </p>
+</div>
+
+<div class="section">
+    <h2>💖 Reasons I Love You</h2>
+    <p>✨ Your beautiful smile</p>
+    <p>✨ Your pure heart</p>
+    <p>✨ The way you understand me</p>
+    <p>✨ The way you make me feel calm</p>
+    <p>✨ Everything about you</p>
+</div>
+
+<button onclick="openPromise()">💗 A Promise For You</button>
+
+<div id="promise" class="hidden section">
+    <h2>🌹 My Promise</h2>
+    <p>
+    I promise to stand by you, support you,  
+    respect you, and love you deeply—  
+    today, tomorrow, and always.
+    </p>
+
+    <h2>❤️ Forever Yours ❤️</h2>
+</div>
+
+<!-- 🎥 VIDEO SECTION (ADDED AT END) -->
+<div class="section">
+    <h2>🎥 One Last Thing… Just for You ❤️</h2>
+    <p>
+        I wanted to end this with something special.  
+        I hope this brings a smile to your face 💕
+    </p>
+
+    <video controls autoplay muted
+           style="width:90%; max-width:350px; border-radius:20px;
+                  box-shadow:0 10px 30px rgba(0,0,0,0.3); margin-top:20px;">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<script>
+function openSurprise() {
+    document.getElementById("surprise").style.display = "block";
+}
+
+function openPromise() {
+    document.getElementById("promise").style.display = "block";
+}
+
+// Floating hearts animation
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.innerHTML = "❤️";
+    heart.className = "heart";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.top = "100vh";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 6000);
+}, 300);
+</script>
+
+</body>
+</html>
